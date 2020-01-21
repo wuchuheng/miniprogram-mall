@@ -15,12 +15,11 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-      Theme.getHomeLocationA(data => {
-          this.setData({
-            topTheme: data[0].entrance_img
-          });
-      });
+  onLoad: async function (options) {
+    const data = await Theme.getHomeLocationA();
+    this.setData({
+      topTheme: data[0]
+    });
   },
 
   /**
