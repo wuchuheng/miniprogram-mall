@@ -1,10 +1,10 @@
 import {config} from "../config/config";
 
 class Http {
-    request(url, data, method = 'GET')
+    static request({url, data, callback, method = 'GET'})
     {
         wx.request({
-            url: url,
+            url: `${config.apiBaseUrl}${url}`,
             method: method,
             data: data,
             header: {
@@ -13,5 +13,10 @@ class Http {
             success: (res) => {
                 callback(res.data);
             }
+        });
     }
+}
+
+export {
+    Http
 }
