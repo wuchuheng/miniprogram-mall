@@ -1,3 +1,4 @@
+<script src="../../pages/home/home.js"></script>
 <view class="container">
     <l-grid l-class="inner-container">
         <block wx:for="{{ grid }}">

@@ -1,5 +1,4 @@
 .container{
-    height: 3250rpx;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -22,5 +21,7 @@
     height: 60rpx;
 }
 .text{
-
+    margin-top: 6rpx;
+    font-size: 26rpx;
+    color: #333333
 }

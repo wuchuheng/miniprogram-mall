@@ -15,4 +15,6 @@
     </swiper>
 
     <s-category-grid grid="{{ grid }}"></s-category-grid>
+
+    <image src="{{ActivityD.entrance_img}}" class="activity"></image>
 </view>
